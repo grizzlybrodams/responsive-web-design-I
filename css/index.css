@@ -69,18 +69,7 @@ h1, h2, h3, h4, h5 {
 	margin: auto;
 	
 }
-@media(max-width:800px){
-    .code{
-        display: none;
-    }
-   .logo{
-       display: flex;
-   }
 
-}
-   @media(max-width:500px){
-
-   }
 header{
     display: flex;
     justify-content: end;
@@ -105,7 +94,7 @@ header nav a{
 header .logo {
     margin-left: 70px;
     display: flex;
-    width: 19%;
+    width: 64%;
 }
 
 .top-img {
@@ -138,39 +127,19 @@ hr {
 	margin-bottom: 30px;
 	margin-top: 30px;
 }
-.main-sections{
+.main-feature{
 	display: flex;
-	flex-direction: column;
+	margin: 2px;
 }
-.features {
+.center-img{
+	width: 99%;
+	padding-bottom: 5%;
+	margin: 30px 0px; 
+}
+.main-service{
 	display: flex;
-	flex-direction: column;
-}
-
-.about {
-	display: flex;
-	flex-direction: column;
-}
-
-.Services{
-	display: flex;
-	flex-direction: column;
-}
-
-.product{
-	display: flex;
-	flex-direction: column;
-}
-
-.vision {
-	flex-direction: column;
-	display: flex;
-}
-
-footer {
-	box-sizing: border-box;
-	width: 878px;
-	height: 300px;
+	justify-content: space-between;
+	margin: 2px;
 }
 
 footer address {
@@ -190,8 +159,68 @@ footer address {
 	margin-bottom: 35px;
 }
 
-.copyright {
-	vertical-align: middle;
+/*tablet mode 800 */
+@media(max-width:800px){
+   .container{
+	   width:97%;
+	   margin: auto;
+	  
+   } 
+	.code{
+        display: none;
+    }
+  	header nav{
+		flex-wrap: wrap-reverse;
+		margin-bottom: -15%;
+		margin: auto;
+   }
+ 	.logo-2{
+		padding:2%;
+	}
+	.middle-img{
+		width: 99%;
+		margin:0px 2px
+	}
 }
-
-
+   @media(max-width:500px){
+		.container{
+			width:97%;
+			margin: auto;
+		}
+		header nav{
+			flex-direction: column-reverse;
+			margin: auto;
+			align-items: center;
+		}
+		header nav a{
+			border-bottom: 1px solid gray;
+    		width: 100%;
+    		text-align: center;
+			padding: 6%;
+			margin:auto;
+		}
+		.logo-2{
+			border-bottom:1px solid gray; 
+		}
+		.top-img{
+			padding: 0px;
+			margin: -5% 0px;
+		}
+		.main-feature{
+			flex-wrap: wrap;
+    		margin: auto;
+		}
+		.features{
+			padding-bottom: 5%;
+		}
+		.main-service{
+			flex-wrap: wrap;
+			margin: auto;
+		}
+		.Services{
+			padding-bottom: 5%
+		}
+		.product{
+			padding-bottom: 5%;
+		}
+	}
